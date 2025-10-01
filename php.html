@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Parallel Histogram Plot</title>
+
+    <style>
+      body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans TC",sans-serif;}
+      .toolbar{
+        position: sticky; top: 0; z-index: 9999;
+        background: #fff; border-bottom: 1px solid #eee;
+        padding: 8px 12px; display: flex; gap: 8px; justify-content: center;
+      }
+      #btnClearBrush{
+        padding:6px 12px; border-radius:8px; border:1px solid #ccc; cursor:pointer;
+      }
+      h1{ text-align:center; margin:12px 0; }
+      svg.ph_plot{
+        display:block; margin:16px auto; outline:1px dashed #ccc;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Parallel Histogram Plot</h1>
+    <svg class="ph_plot"></svg>
+<canvas id="pcp-canvas" style="position:absolute; left:0; top:0; pointer-events:none;"></canvas>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="php.js"></script>
+  </body>
+</html>
+
